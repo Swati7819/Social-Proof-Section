@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    min-height: 500px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: large;
+    row-gap: 2em;
+
+
+}
+
+.box {
+    min-height: 200px;
+}
+
+.box-1 {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    padding: 2em;
+    color: rgb(79, 31, 79);
+
+}
+
+.box-2 {
+    grid-column: span 2;
+    color: rgb(79, 31, 79);
+}
+
+.box-3 {
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+.container .box-1 h1 {
+    font-weight: 700;
+    margin: 0px;
+}
+
+.container .box-1 p {
+    margin: 0px;
+}
+
+.container .box-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.container .box-2 .small-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    flex-direction: column;
+    background-color: rgb(247, 242, 248);
+    padding: 0.8em;
+    margin-inline: 1em;
+    border-radius: 5px;
+}
+
+.container .box-2 .small-box p {
+    font-weight: 700;
+}
+
+.container .box-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+}
+
+.container .box-3 .sub-box {
+    background-color: rgb(81, 31, 80);
+    margin: 1em;
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+
+}
+
+.container .box-3 .sub-box .part-1 {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.container .box-3 .sub-box .part-1 img {
+    border-radius: 50%;
+}
+
+.container .box-3 .sub-box .part-1 .sub-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.container .box-3 .sub-box .part-1 .sub-text .white {
+    color: white;
+    font-weight: 500;
+}
+
+.container .box-3 .sub-box .part-1 .sub-text .pink {
+    color: rgb(194, 100, 160);
+}
+
+.container .box-3 .sub-box .part-2 {
+    color: white;
+}
+
+
+@media (min-width:500px) {
+
+    .container {
+        font-size: 18px;
+
+    }
+
+    .container .box-3 .sub-box .part-1 img {
+        border-radius: 50%;
+        width: 10%;
+    }
+
+}
+
+
+@media (min-width:800px) {
+
+    .container {
+        font-size: 20px;
+
+    }
+
+    .container .box-3 .sub-box .part-1 img {
+        border-radius: 50%;
+        width: 5%;
+    }
+
+    .box-1 {
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+}
+
+@media (min-width:1000px) {
+
+    .container {
+        font-size: 25px;
+
+    }
+
+    .container .box-3 .sub-box .part-1 img {
+        border-radius: 50%;
+        width: 10%;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    .container {
+        max-width: 1200px;
+        margin: 100px;
+        padding: 1em;
+
+    }
+
+    .box-1 {
+        padding-top: 0px;
+        text-align: left;
+        padding-left: 0px;
+
+    }
+
+    .box-1 h1 {
+        padding-right: 2.5em;
+    }
+
+    .box-1,
+    .box-2 {
+        grid-column: span 1;
+    }
+
+    .container .box-2 .small-box {
+        padding: 0.8em;
+        flex-direction: row;
+        gap: 1.5em;
+        justify-content: flex-start;
+
+    }
+
+    .container .box-2 .small-box .star img {
+        width: 15%;
+    }
+
+    .container .box-2 .small-box p {
+        font-size: 20px;
+    }
+
+    .container .box-2 .m-1 {
+        margin-left: 0;
+        margin-right: 3.5em;
+    }
+
+    .container .box-2 .m-3 {
+        margin-left: 3.5em;
+        margin-right: 0px;
+    }
+
+    .container .box-3 {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.5em;
+        font-size: 16px;
+    }
+
+    .container .box-3 .sub-box {
+        min-height: 200px;
+        margin-left: 0px;
+
+    }
+
+    .container .box-3 .sub-box .part-1 img {
+        width: 18%;
+    }
+
+    .container .box-3 .t-1 {
+        margin-top: 0px;
+        ;
+    }
+
+    .container .box-3 .t-2 {
+        margin-top: 1em;
+    }
+
+    .container .box-3 .t-3 {
+        margin-top: 2em;
+    }
+
+
+}
